@@ -1,4 +1,17 @@
-﻿using System;
+﻿/*
+ * FirstProgram.cs
+ * A simple program to demonstrate some basic concepts including:
+ *   - header comments
+ *   - in line comments
+ *   - proper indenting
+ *   - grouping of common code blocks
+ *   - sequencing/order of code execution
+ *   
+ * Revision History
+ *   - Tony Theodoropoulos, 2023.01.12: Created
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +23,7 @@ namespace FIrstProgram
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
             Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.Clear();
@@ -31,7 +44,15 @@ namespace FIrstProgram
             Console.Clear();
 
             Console.WriteLine("Meltdown Happening!!!!!!");
-            Console.Beep();
+            Thread.Sleep(1000);
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.Clear();
+
+            Console.WriteLine("Meltdown Happening!!!!!!");
+            Thread.Sleep(1000);
+
             Console.ReadKey();
         }
     }
